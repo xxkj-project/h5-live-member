@@ -1,0 +1,129 @@
+@imgUrl: '~@/assets/images/currentActivity/tickets/';
+
+.tstTxt {
+  font-style: italic;
+  font-size: 48px;
+  color: #f5dba3;
+  //#CCB48D
+  text-align: center;
+}
+
+.tickets {
+  .bg {
+    .img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  .img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 206px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+
+  .desc1 {
+    margin-bottom: 25px;
+  }
+  .desc2 {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .img {
+      width: 220px;
+      height: 40px;
+    }
+  }
+}
+
+.explainWrap {
+  background: #0e0a01;
+  padding-top: 30px;
+
+  .img {
+    display: block;
+    width: 100%;
+  }
+
+  .explainBox {
+    color: #fff;
+    padding: 30px 20px 35px 20px;
+
+    .titleBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 36px;
+      font-size: 14px;
+    }
+
+    .itemWrap {
+      position: relative;
+
+      .line {
+        position: absolute;
+        top: 16px;
+        left: 3.5px;
+        width: 1px;
+        height: calc(100% - 32px);
+        background: #e5b181;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      line-height: 36px;
+      font-size: 12px;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        background: #e5b181;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .itemTime {
+        width: 90px;
+      }
+      &.noTimeItem {
+        // line-height: 12px;
+        // line-height: 36px;
+        // padding-bottom: 10px;
+
+        .dot {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+/deep/ .van-toast {
+  background: #fff;
+  color: #000;
+}
